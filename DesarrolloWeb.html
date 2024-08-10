@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Repasando todo lo visto</title>
+</head>
+    <header class="interfaz">
+    <div id="Home">
+        <a href="index.html"><button>Home</button></a>
+        <a href="HTML.html"><button>Desarrollo web</button></a>
+        <a href="DesarrolloWeb.html"><button>HTML</button></a>
+        <a href="CSS.html"><button>CSS</button></a>
+        <a href="Javascript.html"><button>Javascript</button></a>
+</div>
+    </header>
+<body>
+    <div>
+        <h1>Introducción a HTML</h1>
+        <div class="parrafosup">
+          <h2>¿Qué es una página web?</h2>
+          <p>
+            Una página web es un documento de texto con marcas. Las marcas
+            permiten modificar la presentación del documento, incluir elementos no
+            contenidos en el texto (por ejemplo, imágenes), crear hiperenlaces,
+            añadir significado al texto (todavía de forma limitada), etc. A las
+            marcas se les llaman también etiquetas. Las páginas web están pensadas
+            para ser vistas mediante los programas llamados navegadores web.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Atributos</h2>
+          <p>
+            Las marcas de apertura pueden contener uno o varios atributos. Los
+            atributos especifican alguna característica de la marca. Algunos
+            atributos pueden incluirse en casi todas las marcas, pero otros son
+            específicos de cada marca. Los atributos pueden a su vez tener valores
+            (uno o varios valores, separados por espacios): etiqueta
+            atributo="valor_de_atributo" atributo2="valor_de_atributo" Se puede
+            modificar el aspecto visual de cualquier marca utilizando propiedades
+            de estilo.Aunque es posible utilizar propiedades de estilo en una
+            página web, se recomienda hacerlo en hojas de estilo.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Comentarios</h2>
+          <p>
+            Una página web puede contener comentarios, que el navegador no muestra
+            (salvo cuando muestra el código fuente de la página). La etiqueta de
+            comentario es
+            <code>&lt;!-- Esto es un comentario --&gt;</code>. Los comentarios
+            pueden estar insertados en cualquier lugar de la página web.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Página básica</h2>
+          <p>
+            -La primera etiqueta <code>&lt;!DOCTYPE ... &gt;</code> es obligatoria
+            e indica el tipo de documento (DOCTYPE) de la página. Existen varios
+            tipos de documentos que corresponden a las diferentes versiones de
+            HTML y XHTML. El tipo "html" es el que corresponde al HTML5.
+          </p>
+          <p>
+            -La etiqueta <code>&lt;html&gt; ...&lt;/html&gt;</code> engloba todo
+            el documento html.
+          </p>
+          <p>
+            -Un documento html se divide en dos partes, la cabecera
+            <code>&lt;head&gt; ...&lt;/head&gt;</code> y el cuerpo
+            <code>&lt;body&gt; ...&lt;/body&gt;</code>.
+          </p>
+          <p>
+            -La cabecera <code>&lt;head&gt; ...&lt;/head&gt;</code> contiene
+            información de identificación y control que en general no se muestra
+            en la ventana del navegador, aunque puede afectar a la presentación
+            (por ejemplo, los enlaces a hojas de estilo).
+          </p>
+          <p>
+            -La etiqueta de título <code>&lt;title&gt; ...&lt;/title&gt;</code> es
+            obligatoria y debe incluirse en todas las páginas web. Contiene el
+            texto que se muestra en la pestaña del navegador. Si el texto es
+            largo, la pestaña sólo mostrará el principio, pero situando el ratón
+            sobre la pestaña, el texto completo se mostrará en una pequeña ventana
+            flotante.
+          </p>
+          <p>
+            -La etiqueta <code>&lt;link&gt;</code> permite hacer referencia a otro
+            documento. El atributo <code>rel</code> indica en general la relación
+            entre los dos documentos. En este caso, el valor del atributo
+            <code>rel="stylesheet"</code> indica que se está haciendo referencia a
+            una hoja de estilo CSS.
+          </p>
+          <p>
+            -La cabecera <code>&lt;head&gt; ...&lt;/head&gt;</code> podría
+            contener también una etiqueta
+            <code>&lt;script&gt; ...&lt;/script&gt;</code>, que permite incluir
+            directamente código JavaScript en el documento o hacer referencia al
+            documento en el que se encuentra ese código.
+          </p>
+          <p>
+            -El cuerpo <code>&lt;body&gt; ...&lt;/body&gt;</code> contiene lo que
+            se verá en la ventana del navegador. En el ejemplo sólo contiene un
+            párrafo.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Sintaxis de HTML</h2>
+          <p>
+            Si un documento contiene errores de sintaxis se dice que es un
+            documento inválido. Aunque un documento HTML no sea sintácticamente
+            correcto, los navegadores intentan mostrar el documento de la mejor
+            manera posible. Los navegadores a menudo consiguen mostrar
+            correctamente documentos inválidos, pero se aconseja validar y
+            corregir los documentos para asegurar que los navegadores puedan
+            mostrarlos correctamente.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Elementos (etiquetas)</h2>
+          <p>
+            El nombre del elemento debe ir a continuación del carácter de
+            mayor(sin espacios). El nombre del elemento en la etiqueta de cierre
+            tiene que coincidir con el nombre en la etiqueta de apertura. Los
+            documentos HTML suelen tener un único elemento raíz de todo el
+            documento, el elemento html , aunque puede omitirse Todos los
+            elementos tienen que estar completamente contenidos en otros elementos
+            (no se pueden cruzar las etiquetas).
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Atributos</h2>
+          <p>
+            Los atributos sólo pueden aparecer en la etiqueta de apertura: Los
+            valores de los atributos se suelen escribir entre comillas (dobles o
+            simples), pero no es necesario si el valor no contiene espacios en
+            blanco. El valor de un atributo id no se puede repetir en un documento
+            (es decir, en un documento no puede haber dos elementos cualesquiera
+            con el mismo valor en el atributo id).El valor de cada atributo es
+            asignado mediante el signo igual "=" (salvo en el caso de los
+            atributos booleanos, que no requieren asignación). Cada atributo puede
+            contener más de un valor, separados por un espacio, por lo que los
+            valores no pueden contener espacios internos. Además, el valor de un
+            atributo debe estar entre comillas (atributo="valor1 valor2") aunque
+            esto puede omitirse en el caso de que el atributo contenga solo un
+            valor (atributo=valor1).Existen una serie de atributos comunes a todas
+            las etiquetas y algunas etiquetas tienen unos atributos
+            específicos.<br />
+            Alguno de los principales son: <br />
+            -Atributo class El atributo class permite definir clases de elementos.
+            Dada su importancia, se explica en la lección sobre Clases. Las hojas
+            de estilo pueden hacer referencia a los elementos con atributo class,
+            como se comentará en la lección sobre Selectores.<br />
+            -Atributo id El atributo id permite identificar de forma unívoca un
+            elemento en un documento. Por ello, en una página web no puede haber
+            dos elementos con el mismo valor en el atributo id. Además, un
+            elemento sólo puede tener un atributo <br />
+            -Atributo style El atributo style permite definir propiedades de
+            estilo a un elemento determinado.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Clases</h2>
+          <p>
+            Dado que el número de etiquetas del HTML es reducido, es probable que
+            en una página web se quiera dar un formato distinto a elementos con la
+            misma etiqueta. Se puede sortear esta limitación utilizando clases,
+            que se pueden asignar a cualquier elemento de una página web. Las
+            clases se asignan con el atributo class. El valor del atributo class
+            (el nombre de la clase) sólo pueden contener caracteres ingleses,
+            números, guiones y subrayados, aunque el primer carácter no puede ser
+            ni un número ni un guión.Cuando se define una clase de elemento, la
+            regla se aplica únicamente a los elementos de ese tipo que tienen esa
+            clase.<br />
+            Los navegadores distinguen los nombres de clases escritos en
+            mayúsculas o minúsculas. Se recomienda usar solo minúsculas.A un
+            elemento con clase se le aplica tanto la regla de la clase como la
+            regla de la etiqueta general (esta es una característica del mecanismo
+            de cascada de las hojas de estilo).<br />
+            Un elemento puede tener asignado varias clases. Para asignar varias
+            clases a un elemento, hay que escribir en el atributo class los
+            nombres de todas las clases que se quieren aplicar, separados por
+            espacios.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Formularios</h2>
+          <p>
+            Un formulario es un conjunto de controles (botones, cajas de texto,
+            casillas de verificación, botones radio, etc.) que permiten al usuario
+            introducir datos y enviarlos al servidor web para su procesamiento. La
+            etiqueta que delimita un formulario es la etiqueta
+            <code>&lt;form&gt; ...&lt;/form&gt;</code>.
+          </p>
+          <p>Los atributos más importantes de esta etiqueta son:</p>
+          <ul>
+            <li>
+              action: contiene el nombre del agente que procesará los datos
+              remitidos al servidor (por ejemplo, un script de PHP).
+            </li>
+            <li>
+              method: define la manera de enviar los datos al servidor. Los
+              valores posibles son:
+              <ul>
+                <li>
+                  get: los valores enviados se añaden a la dirección indicada en
+                  el atributo action.
+                </li>
+                <li>post: los valores se envían de forma separada.</li>
+                <li>
+                  Si el atributo method no está establecido, el formulario se
+                  comporta como si el valor fuera get.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            La diferencia entre los métodos get y post radica en la forma de
+            enviar los datos a la página cuando se pulsa el botón “Enviar”.
+            Mientras que el método GET envía los datos usando la URL, el método
+            POST los envía de forma que no podemos verlos (en un segundo plano u
+            "ocultos" al usuario).
+          </p>
+          <p>
+            Los etiquetas que crean los controles en los formularios son "input",
+            "button", "select", "optgroup", "option" y "textarea". Además, se
+            pueden estructurar los controles con las etiquetas "fieldset" y
+            "legend". Por último, la etiqueta "label" permite mejorar la
+            accesibilidad de los controles.
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Atributos de input</h2>
+          <p>
+            Atributo type: indica el tipo de control de que se trata.<br />
+            Atributo name:El atributo name identifica al control. Todos los
+            controles de un formulario deben tener el atributo name porque, en
+            general, sólo se envían los controles que lo tienen. <br />
+            Atributo value:value permite establecer el valor inicial de un
+            control, aunque cada control lo utiliza de una forma ligeramente
+            distinta y algunos controles no lo admiten<br />
+            Atributo required:permite indicar qué controles es obligatorio
+            rellenar para enviar el formulario.<br />
+            Atributo placeholder:El atributo placeholder permite mostrar en los
+            controles de texto un texto que desaparece al escribir en el control.
+            <br />
+            Atributo size:El atributo size permite establecer la longitud de los
+            controles de texto.Por omisión, las cajas suelen tener 20 caracteres
+            de longitud.<br />
+            Atributos maxlength y minlength:minlength permiten establecer la
+            longitud máxima y mínima, respectivamente, que puede escribir el
+            usuario en un control de texto.<br />
+            Atributo disabled: permite deshabilitar el control. Una vez
+            deshabilitado, el control ni siquiera puede realizar el foco.<br />
+          </p>
+        </div>
+  
+        <div class="parrafosup">
+          <h2>Botones: input y button</h2>
+          <p>
+            Los controles son los elementos que permiten al usuario introducir
+            información. La mayoría de controles se obtienen mediante la etiqueta
+            vacía input. Los botones se crean con la etiqueta input o mediante la
+            etiqueta button. La diferencia entre ellos es que input sólo puede
+            contener texto, mientras que button permite incluir elementos html
+            como imágenes. El contenido del botón input se define mediante el
+            atributo value, por lo que sólo puede contener texto.
+          </p>
+        </div>
+      </div>
+</body>
+<br>
+<br>
+<br>
+<footer class="piedepag">
+    <p id="pie"></p>
+</footer>
+</html>

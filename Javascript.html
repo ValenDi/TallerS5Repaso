@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <title>Repasando todo lo visto</title>
+  </head>
+  <header class="interfaz">
+    <div id="Javascript">
+      <a href="index.html"><button>Home</button></a>
+      <a href="HTML.html"><button>Desarrollo web</button></a>
+      <a href="DesarrolloWeb.html"><button>HTML</button></a>
+      <a href="CSS.html"><button>CSS</button></a>
+      <a href="Javascript.html"><button>Javascript</button></a>
+    </div>
+  </header>
+  <body>
+    <br />
+    <br />
+    <br />
+    <h1>Javascript (DOM, HTTP y Fetch)</h1>
+    <h2>DOM (Document Object Model)</h2>
+    <p>
+      El DOM (Document Object Model) es una estructura que permite acceder y
+      manipular elementos de páginas HTML a través de nodos, es fundamental para
+      el desarrollo de aplicaciones web interactivas y dinámicas. El DOM
+      transforma automáticamente las páginas web en un "árbol de nodos", donde
+      cada etiqueta HTML se convierte en un nodo de tipo "Elemento". Esto
+      facilita tareas comunes como obtener valores de formularios, crear o
+      eliminar elementos dinámicamente y manipular clases de elementos. Estas
+      modificaciones se hacen a traves de metodos para acceder a los nodos:
+      getElementById, getElementsByTagName, getElementsByClassName, etc.
+    </p>
+    <img src="dom.png" id="dom" />
+    <p id="lorem">
+      Por ejemplo, al hacerle click al siguiente botón, se produce un cambio
+      dinamico en la pagina web.
+    </p>
+    <button id="highlightBtn">Haz click!</button>
+    <h2>HTTP (Hypertext Transfer Protocol)</h2>
+    <p>
+      Este funciona como un protocolo de peticion-respuesta entre el cliente (un
+      navegador web) y un servidor (una computadora que aloja un sitio web).
+    </p>
+    <p>Por ejemplo: un navegador web envia un pedido al servidor:</p>
+    <img src="request.png" id="request" />
+    <p>Luego, el servidor responde al cliente con la informacion de estado</p>
+    <img src="response.png" id="response" />
+    <h3>Metodos de peticion</h3>
+    <p>Algunos de estos metodos son:</p>
+    <ul>
+      <li>Metodo GET</li>
+      <li>Metodo POST</li>
+    </ul>
+    <p>
+      Puedes leer mas sobre estos metodos en
+      <a href="https://www.w3schools.com/tags/ref_httpmethods.asp">w3schools</a>
+    </p>
+    <h2>Fetch</h2>
+    <p>
+      fetch es una funcion de Javascript que permite realizar solicitudes HTTP
+      para, por ejemplo, obtener informacion de un usuario o cargar un listado
+      de productos. La sintaxis basica es:
+      <strong>let promise= fetch(url, [options])</strong>, donde la promesa
+      devuelve una respuesta en cuanto el servidor responda.
+    </p>
+    <p>
+      Si el fetch no puede hacer el pedido HTTPS, hay diferentes estados que
+      puede retornar:
+    </p>
+    <img id="status" src="status.jpg" />
+  </body>
+  <footer></footer>
+</html>

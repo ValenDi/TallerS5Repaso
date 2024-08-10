@@ -1,0 +1,134 @@
+body{
+    background-image: url(b.jpg);
+    background-size: cover;
+}
+
+header.interfaz{
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(108, 136, 108);
+    border-radius: 60%;
+}
+
+@font-face{
+    font-family: "Rowdies";
+    src: url(Rowdies-Light.ttf);
+}
+
+@font-face{
+    font-family: "SG";
+    src: url(SchibstedGrotesk-VariableFont_wght.ttf);
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Rowdies";
+    font-size: 20px;
+    border-radius: 30px;
+    color: rgb(3, 53, 18);
+    background-color: rgb(227, 235, 192);
+}
+
+button:hover{
+    color: rgb(190, 233, 173);
+    background-color: rgb(46, 70, 36);
+}
+
+h1{
+    font-family: "Rowdies";
+    font-size: 30px;
+    color: rgb(3, 53, 18);
+    text-align: left;
+    margin-left: 10px;
+}
+
+h2 {
+    font-family: "Rowdies";
+    font-size: 20px;
+    color: rgb(3, 53, 18);
+    text-align: left;
+    margin-left: 10px;
+}
+
+h3 {
+    font-family: "Rowdies";
+    font-size: 15px;
+    color: rgb(3, 53, 18);
+    text-align: left;
+    margin-left: 10px;
+}
+
+p, ul{
+    margin-left: 10px;
+    font-family: "SG";
+    color: rgb(3, 53, 18);
+}
+
+dl{
+    text-align: center;
+    font-family: "SG";
+    color: rgb(3, 53, 18);
+}
+
+img {
+    border-style: solid;
+    border-color:  rgb(3, 53, 18);
+    border-width: 3px;
+    border-radius: 2%;
+    width: 30%;
+    margin-left: 10px;
+}
+
+p.parrafosup{
+    display: flex;
+}
+
+img#imgPC{
+    margin-left: 35%;
+    margin-right: 60%;
+}
+
+p#pie{
+    text-align: center;
+    background-color: rgb(108, 136, 108);
+    color: rgb(229, 248, 207);
+}
+
+.cssbody{
+    margin-left: 20px;
+    font-family: "SG";
+    color: rgb(5, 27, 5);
+}
+
+img.css{
+    margin-left: 40px;
+    padding-inline-end: 20px;
+    border-image: 2px;
+}
+
+.tituloA {
+    color: rgb(56, 124, 4);
+    font-weight: bold;
+}
+
+.tituloB {
+    color: rgb(31, 123, 81);
+    font-weight: bold;
+}
+
+.highlight{
+    background-color: green;
+    color: white
+}
+
+#tituloPrincipal {
+    text-align: center;
+}
+
+.integrantes {
+    text-align: center;
+    list-style-position: inside;
+}
